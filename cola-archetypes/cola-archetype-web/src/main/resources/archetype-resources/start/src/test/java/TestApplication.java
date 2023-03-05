@@ -3,12 +3,13 @@
 #set( $symbol_escape = '\' )
 package ${package};
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.context.ApplicationContext;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
 
+@RunWith(SpringRunner.class)
+@SpringBootTest
+@ActiveProfiles("test")
 public class TestApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-    }
 }

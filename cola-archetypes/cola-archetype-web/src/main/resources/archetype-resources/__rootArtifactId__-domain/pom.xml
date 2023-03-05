@@ -28,5 +28,10 @@
             <artifactId>cola-component-exception</artifactId>
         </dependency>
         <!-- COLA components End-->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
     </dependencies>
 </project>
